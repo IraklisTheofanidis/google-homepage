@@ -45,7 +45,7 @@ body{
     position: absolute;
     top:40%; left:0;right:0;margin-left:auto;margin-right:auto;background-color: white;
     width: 580px; height:30px; border-radius: 30px;
-    border:1px solid #c0c0c0;
+    border:1px solid #ddd;
     padding:10px;
     display: flex;
     align-items:center;
@@ -92,7 +92,7 @@ body{
     outline:none;
     border-radius:5px;
     cursor:pointer;
-    font-size:14px;
+    font-size:14px;color:#3c4043;background-color: #f8f9fa;;
 }
 
 #content #buttons input:hover{
@@ -100,19 +100,21 @@ body{
 }
 
 #content #footer{
-    width:100%;height:7%;position:absolute;bottom:0px;
+    width:100%;height:7%;position:fixed;bottom:0px;
     background-color: #f2f2f2;
+    display: flex; justify-content:space-between;align-items: center;
+    color:#70757a;font-size:15px;
 
 }
 
 #content #footer #about{
-    width:50%;height:100%;position:absolute;left:0px;display:flex;
-    justify-content: flex-start;
+  margin-left:30px; display: flex;/*  width:50%;height:100%;
+  position:absolute;left:0px;display:flex; justify-content: flex-start;*/
 }
 
 #content #footer #about ul{
-    gap:12px; line-height: 24px; padding:0 ; display:flex;align-items:center;
-    list-style-type: none; margin-left :3%;
+    display:flex;align-items:center; gap:12px;  padding:0 ;
+    list-style-type: none; 
 }
 
 #content #footer #about ul li a{
@@ -120,17 +122,31 @@ body{
     text-decoration: none;
 }
 
+#content #footer #about ul li a:hover{
+    text-decoration: underline;
+}
+
 #content #footer #privacy{
-    width:50%;height:100%;position:absolute;right:0px;display:flex;
-    justify-content: flex-end;
+    margin-right:30px;display: flex;/*   width:50%;height:100%;
+   justify-content: flex-end;position:absolute;right:0px;display:flex;*/
 }
 
 #content #footer #privacy ul{
     list-style-type: none; display: flex; padding:0;gap:12px;
-    margin-right:3%;align-items: center; line-height: 24px;
+    margin-right:3%;align-items: center;
 }
 
 #content #footer #privacy li a{
     color:inherit;
     text-decoration: none;
 } 
+
+#content #footer #privacy li a:hover{
+    text-decoration:underline;
+}
+
+@media (max-width: 670px){
+    #content #search{width:80%;}
+
+    #content #footer{height:15%; flex-direction: column;}
+}
