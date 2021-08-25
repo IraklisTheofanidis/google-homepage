@@ -1,6 +1,9 @@
+
 body{
     margin:0;
 }
+
+
 
 #content{
     margin:0px;
@@ -18,6 +21,7 @@ body{
     align-items:center;
     list-style-type:none;
     margin-right:3%;
+    font-size:inherit;
 }
 
 #content #nav ul li{
