@@ -154,3 +154,21 @@ body{
 
     #content #footer{height:15%; flex-direction: column;}
 }
+
+@media(min-height:650px){
+    #content #search{
+        top:35%;
+    }
+    #content #buttons{
+        top:45%;
+    }
+}
+    @media(min-height:850px){
+        #content #search{
+            top:32%;
+        }
+        #content #buttons{
+            top:40%;
+        }
+    
+}
